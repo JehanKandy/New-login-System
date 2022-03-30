@@ -65,9 +65,7 @@ New login System using CSS Bootstrap HTML php mysql
             }
         }
     }
-
-
-?>
+          ?>
 
 
 <!DOCTYPE html>
