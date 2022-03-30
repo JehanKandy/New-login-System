@@ -205,3 +205,8 @@ and get date from database and validete all data also<br>
 <br><br>
 and then according to above code's php part in top of code I develop like following
 
+    include("config.php");
+    
+include config.php, in order to config.php file all of the conncetion code goes in it <br>
+following is the config.php
+    
