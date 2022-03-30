@@ -275,5 +275,44 @@ and also, <br>
 there is another file named style.css it will style the system and also, <br>
 I used bootstrap for this system.<br>
 
-using following links, <br>
+    using following links, <br>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Permanent+Marker&family=Teko&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .jk_login {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(92, 92, 92, 0.85), rgba(0, 0, 0, 0.85));
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        margin-top: 5%;
+    }
+
+    h4 {
+        font-family: 'Anton', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    h3 {
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        color: white;
+    }
+    
+    
+    
+******************************************************
+
+
 
