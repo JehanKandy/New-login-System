@@ -223,3 +223,8 @@ following is the config.php
             die("Connection ERROR...!".mysqli_connect_error());
         }
     ?>
+
+
+And according to this system there is a file called admin.php <br>
+when we successfully done register or login then we immidiatly redirect to the admin.php 
+
