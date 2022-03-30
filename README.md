@@ -210,21 +210,52 @@ and then according to above code's php part in top of code I develop like follow
 include config.php, in order to config.php file all of the conncetion code goes in it <br>
 following is the config.php
     
-    <?php
-        $server = "localhost";
-        $user = "root";
-        $pass = "";
-        $db = "my_new_login";
+        <?php
+            $server = "localhost";
+            $user = "root";
+            $pass = "";
+            $db = "my_new_login";
 
-        //make connecting
-        $con = mysqli_connect($server,$user,$pass,$db);
-        //connection Velidation
-        if(!$con){
-            die("Connection ERROR...!".mysqli_connect_error());
+            //make connecting
+            $con = mysqli_connect($server,$user,$pass,$db);
+            //connection Velidation
+            if(!$con){
+                die("Connection ERROR...!".mysqli_connect_error());
+            }
+        ?>
+
+
+    And according to this system there is a file called admin.php <br>
+    when we successfully done register or login then we immidiatly redirect to the admin.php 
+
+        <?php
+        include("config.php");
+
+        $sql = "SELECT * FROM user_tbl";
+        $result = mysqli_query($con, $sql);
+
+        while($row = mysqli_fetch_assoc($result)){
+            $usern = $row['username'];
         }
+
     ?>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <h3>Hello <?php echo($usern); ?></h3>
 
-And according to this system there is a file called admin.php <br>
-when we successfully done register or login then we immidiatly redirect to the admin.php 
+        <a href="logout.php"><button class="btn btn-danger">Logout</button></a>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    </html>
