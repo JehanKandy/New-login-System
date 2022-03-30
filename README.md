@@ -267,3 +267,13 @@ when we successfully done register or login then we immidiatly redirect to the a
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
     </html>
+    
+    
+    
+    
+and also, <br>
+there is another file named style.css it will style the system and also, <br>
+I used bootstrap for this system.<br>
+
+using following links, <br>
+
