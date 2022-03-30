@@ -210,3 +210,16 @@ and then according to above code's php part in top of code I develop like follow
 include config.php, in order to config.php file all of the conncetion code goes in it <br>
 following is the config.php
     
+    <?php
+        $server = "localhost";
+        $user = "root";
+        $pass = "";
+        $db = "my_new_login";
+
+        //make connecting
+        $con = mysqli_connect($server,$user,$pass,$db);
+        //connection Velidation
+        if(!$con){
+            die("Connection ERROR...!".mysqli_connect_error());
+        }
+    ?>
