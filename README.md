@@ -225,8 +225,16 @@ following is the config.php
         ?>
 
 
-    And according to this system there is a file called admin.php <br>
-    when we successfully done register or login then we immidiatly redirect to the admin.php 
+*********************************
+
+
+And according to this system there is a file called admin.php <br>
+when we successfully done register or login then we immidiatly redirect to the admin.php 
+
+
+**********************************
+
+
 
         <?php
         include("config.php");
