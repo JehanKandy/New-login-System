@@ -3,8 +3,8 @@ New login System using CSS Bootstrap HTML php mysql
 <br><br>
 <b>Code Explane</b>
 <br>
-    <?php
-    include("config.php");
+        <?php
+        include("config.php");
 
     if(isset($_POST['register'])){
         if($_SERVER["REQUEST_METHOD"] == "POST"){
